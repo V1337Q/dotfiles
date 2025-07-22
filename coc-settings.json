@@ -1,0 +1,40 @@
+{
+  "diagnostic.enableSign": true,
+  "diagnostic.errorSign": "│",
+  "diagnostic.warningSign": "│",
+  "diagnostic.infoSign": "ℹ",
+  "diagnostic.hintSign": "➤",
+  "languageserver": {
+    "pylsp": {
+      "command": "pylsp",
+      "filetypes": ["python"],
+      "settings": {
+        "pylsp": {
+          "plugins": {
+            "pycodestyle": {
+              "enabled": true
+            }
+          }
+        }
+      }
+    },
+    "gdscript": {
+      "command": "cmd.exe",
+      "args": [
+        "/C",
+        "\"C:\\\\Program Files\\\\Godot\\\\Godot.exe\"",
+        "--headless",
+        "--editor",
+        "--path",
+        ".",
+        "--lsp"
+      ],
+      "filetypes": ["gdscript"],
+      "rootPatterns": ["project.godot"],
+      "initializationOptions": {
+        "editor": "neovim"
+      }
+    }
+  },
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/20.1.8/clangd_20.1.8/bin/clangd"
+}
