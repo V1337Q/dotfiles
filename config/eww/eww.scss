@@ -1,0 +1,27 @@
+* {
+  all: unset;
+}
+
+tooltip {
+  background-color: #14171c;
+  color: #b8bfe5;
+  font-family: Inconsolata SemiCondensed Medium;
+  font-weight: Bold;
+  font-size: 1rem;
+}
+
+$bg: #171B20;
+$bg-alt: #78DBA9;
+$mc: #21262e;
+$fg: #b6beca;
+$black: #485263;
+$red: #e26c7c;
+$cyan: #70A5EB;
+$green: #78DBA9;
+$yellow: #f1cf8a;
+$blue: #86aaec;
+$magenta: #c68aee;
+$cyan: #e26c7c;
+$archicon: #86aaec;
+
+@import "profilecard/profilecard.scss";

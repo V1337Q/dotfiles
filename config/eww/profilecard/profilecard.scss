@@ -1,0 +1,394 @@
+.launchermenu {
+  background-color: $bg;
+  border-radius: 0.5rem;
+  margin: 0.8rem 0.8rem;
+  min-width: 18rem;
+}
+
+.min {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 1.1rem;
+  padding: 0 0.9rem;
+  color: $red;
+}
+
+.min:hover {
+  color: $magenta;
+}
+
+.usercard {
+  background-color: $bg-alt;
+  border-radius: 0.5rem;
+}
+
+.face {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 65px;
+  min-width: 65px;
+  //border: .2rem solid $bg;
+  border-radius: 100%;
+  box-shadow: 0 0 7px 1px rgba($fg, 0.3);
+  margin: 10px -8px 10px 10px;
+}
+
+.user-host {
+  color: $fg;
+  font-family: Cartograph CF;
+  font-weight: Normal;
+  font-size: 1rem;
+}
+
+.host {
+  color: $fg;
+  font-family: Cartograph CF;
+  font-size: 0.8rem;
+}
+
+.uptime {
+  color: $fg;
+  font-family: Cartograph CF;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.btn-info {
+  font-family: Material Design Icons Desktop;
+  font-size: 1.2rem;
+  color: $fg;
+  padding: 0 0.6rem;
+}
+
+.btn-info:hover {
+  text-shadow: 0 0 2px $fg;
+}
+
+.launcher-pfp-label {
+  font-family: Inconsolata SemiCondensed Medium;
+  font-weight: Bold;
+  font-size: 1rem;
+}
+
+.pacman {
+  background-color: $bg;
+  padding: 0rem 0rem;
+  border-radius: 0%;
+  margin-left:  30px;
+  color: $green;
+
+  .pacman-icon {
+    font-family: Material Design Icons Desktop;
+    font-size: 1.1rem;
+    color: $yellow;
+  }
+
+  .pacman-info {
+    font-family: Inconsolata SemiCondensed Medium;
+    font-weight: Bold;
+    font-size: 1rem;
+  }
+
+  .pacman-updates {
+    // font-family: Inconsolata Condensed Medium;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: Bold;
+    background-color: $bg;
+    font-size: 0.9rem;
+  }
+}
+
+.fetch {
+  background-color: $bg-alt;
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  border-radius: 0.5rem;
+  color: $fg;
+
+  .arch-icon {
+    font-family: Material Design Icons Desktop;
+    font-size: 3rem;
+    color: $archicon;
+  }
+}
+
+.os-icon {
+  font-family: Material Design Icons Desktop;
+  font-size: 0.8rem;
+  color: $archicon;
+}
+
+.pkgs-icon {
+  font-family: Material Design Icons Desktop;
+  font-size: 0.8rem;
+  color: $yellow;
+}
+
+
+.wm-icon {
+  font-family: Material Design Icons Desktop;
+  font-size: 0.8rem;
+  color: $magenta;
+}
+
+.os-text,
+.pkgs-text,
+.wm-text {
+  font-family: Inconsolata SemiCondensed Medium;
+  font-weight: Bold;
+  font-size: 1rem;
+}
+
+.weatherbox {
+  background-color: $bg-alt;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+
+.weathericon {
+  padding: 0 0.8rem;
+  border-radius: 0.5rem;
+  margin-left: 0.6rem;
+  background-color: $bg-alt;
+  font-size: 1.5rem;
+  font-family: "Font Awesome 6 Free Solid";
+}
+
+.weatherdesc {
+  font-size: 1.75rem;
+  font-family: "Inconsolata SemiCondensed Medium";
+  font-weight: Bold;
+}
+
+.weathertemp {
+  font-family: "Iosevka Nerd Font";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $fg;
+}
+
+.weathercity {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  color: $fg;
+  font-family: Inconsolata SemiCondensed Medium;
+  font-weight: Bold;
+}
+
+.tools-main {
+  padding: 0.4rem 0.6rem;
+}
+
+.tools-box {
+  font-family: "Material Design Icons Desktop";
+  font-size: 1.4rem;
+  border-radius: 100%;
+  background-color: $bg-alt;
+}
+.wifi-btn {
+  color: $blue;
+}
+
+.wifi-no-btn {
+  color: $black;
+}
+
+.bluetooth-btn {
+  color: $blue;
+}
+
+.bluetooth-no-btn {
+  color: $black;
+}
+
+.airplane-btn {
+  color: $blue;
+}
+
+.airplane-no-btn {
+  color: $black;
+}
+
+.redshift-btn {
+  color: $blue;
+}
+
+.redshift-no-btn {
+  color: $black;
+}
+
+.term-btn {
+  color: $blue;
+}
+
+.game-btn {
+  color: $blue;
+}
+
+.game-no-btn {
+  color: $black;
+}
+
+.info-btn {
+  font-family: BebasNeue;
+  font-size: 1.1rem;
+  color: $fg;
+}
+
+.progress {
+  background-color: $bg;
+  padding: 0rem 0rem;
+  border-radius: 2rem;
+
+  circular-progress {
+    background-color: $mc;
+
+    &.ram {
+      color: $magenta;
+    }
+
+    &.cpu {
+      color: $green;
+    }
+
+    &.disk {
+      color: $blue;
+    }
+  }
+
+  .icon {
+    font-family: "Font Awesome 6 Free Solid";
+    font-size: 0.7rem;
+    padding: 0.6rem;
+  }
+}
+
+.temp {
+  // font-family: "Font Awesome 6 Free Solid";
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 1rem;
+  color: $magenta;
+}
+
+// .powermenu {
+// }
+.power-icon {
+  font-size: 20px;
+  color: $red;
+  background-color: $mc;
+  padding: 0rem 0rem;
+  border-radius: 200%;
+}
+
+.power-icon:hover {
+  background-color: $red;
+  font-size: 20px;
+  padding: 0rem 0rem;
+  color: $mc;
+}
+
+.power-popup {
+  background-color: $bg;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.power-btn {
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 200%;
+  background-color: #313244;
+  color: #cdd6f4;
+  transition: all 0.2s ease;
+}
+
+.power-btn {
+  background-color: $yellow;
+  font-size:  25;
+  padding: 0.5rem 1rem;
+  border-radius: 200rem 200rem;
+  color: $mc;
+}
+.power-btn:hover {
+  background-color: $red;
+  color: $mc;
+}
+
+// .powermenu .power-icon:hover {
+//   background-color: #f38ba8;
+//   color: #1e1e2e;
+// }
+
+// .volume-button {
+//   background-color: $black;
+//   font-size: 15px;
+//   padding: 0px;
+//   border-radius: 30%;
+//   color: $fg;
+// }
+
+.volume-button {
+  background-color: $mc;
+  font-size: 15px;
+  padding: 0px;
+  border-radius: 30%;
+  color: $blue;
+}
+.volume-button:hover {
+  background-color: #f38ba8;
+  color: #1e1e2e;
+}
+
+.volume-slider {
+  background-color: $mc;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.volume-slider trough {
+  min-height: 6px;
+  border-radius: 9999px;
+  background-color: $black;
+}
+
+.volume-slider highlight {
+  min-height: 6px;
+  border-radius: 9999px;
+  background-color: $blue;
+}
+
+.volume-slider slider {
+  background-color: $blue;
+  border: none;
+  min-width: 0px;
+  min-height: 12px;
+  border-radius: 60%;
+}
+
+.netnet {
+  background-color: $mc;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 17px;
+  padding: 0rem 0rem;
+  border-radius: 200%;
+  color: $green;
+}
+
+// .updateswin {
+//   background-color: $mc;
+//   font-family: "JetBrainsMono Nerd Font";
+//   font-size: 17px;
+//   padding: 0rem 0rem;
+//   border-radius: 10%;
+//   color: $green;
+// }
+
+.music-button {
+  background-color: $mc;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 20px;
+  padding: 0rem 0rem;
+  border-radius: 20%;
+  color: $green;
+}
