@@ -1,0 +1,95 @@
+# # Colors for Cristina Rice
+#
+# # Default colors
+# [colors.primary]
+# background = "#232136"
+# foreground = "#e0def4"
+#
+# # Cursor colors
+# [colors.cursor]
+# cursor = "#e0def4"
+# text = "#232136"
+#
+# # Normal colors
+# [colors.normal]
+# black = "#393552"
+# red = "#ea6f91"
+# green = "#9bced7"
+# yellow = "#f1ca93"
+# blue = "#34738e"
+# magenta = "#c3a5e6"
+# cyan = "#eabbb9"
+# white = "#faebd7"
+#
+# # Bright colors
+# [colors.bright]
+# black = "#6e6a86"
+# red = "#ea6f91"
+# green = "#9bced7"
+# yellow = "#f1ca93"
+# blue = "#34738e"
+# magenta = "#c3a5e6"
+# cyan = "#ebbcba"
+# white = "#e0def4"
+
+[colors.primary]
+background = "#171B20"
+foreground = "#b6beca"
+dim_foreground = "#485263"
+bright_foreground = "#dee1e6"
+
+[colors.cursor]
+text = "#171B20"
+cursor = "#b6beca"
+
+[colors.vi_mode_cursor]
+text = "#171B20"
+cursor = "#b6beca"
+
+[colors.search.matches]
+foreground = "#171B20"
+background = "#78DBA9"
+
+[colors.search.focused_match]
+foreground = "#171B20"
+background = "#86aaec"
+
+[colors.footer_bar]
+foreground = "#171B20"
+background = "#78DBA9"
+
+[colors.hints.start]
+foreground = "#171B20"
+background = "#f1cf8a"
+
+[colors.hints.end]
+foreground = "#171B20"
+background = "#e9a180"
+
+[colors.selection]
+text = "#171B20"
+background = "#b6beca"
+
+[colors.normal]
+black = "#171B20"
+red = "#70A5EB"
+green = "#78DBA9"
+yellow = "#f1cf8a"
+blue = "#86aaec"
+magenta = "#c68aee"
+cyan = "#e26c7c"
+white = "#b6beca"
+
+[colors.bright]
+black = "#485263"
+red = "#70A5EB"
+green = "#78DBA9"
+yellow = "#f1cf8a"
+blue = "#86aaec"
+magenta = "#c68aee"
+cyan = "#e26c7c"
+white = "#dee1e6"
+[[colors.indexed_colors]]
+index = 16
+color = "#9cd1ff"
+

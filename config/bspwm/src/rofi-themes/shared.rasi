@@ -1,0 +1,12 @@
+* {
+    font: "JetBrainsMono NF Bold 9";
+    background: #171B20;
+    bg-alt: #78DBA9;
+    background-alt: #171B20E0;
+    foreground: #b6beca;
+    selected: #c68aee;
+    active: #78DBA9;
+    urgent: #70A5EB;
+
+    img-background: url("~/.config/bspwm/rices/cristina/rofi.webp", width);
+}
