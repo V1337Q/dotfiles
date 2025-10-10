@@ -20,18 +20,35 @@
 ![Alt text](./images/eww-setup.png)
 
 ## Features:
-- Clean Kitty tab bar.
-![Alt text](./images/tab-bar-showcase.gif)
-- Clean pacman themed starship prompt.
-![Alt text](./images/prompt-showcase.gif)
-- Clean bspwm and polybar rice.
+- Clean (or not so) Starship prompt and tmux config.
+![Alt text](./images/tmux.png)
+- Polybar + eww widgets (veri cool i swer)
 - Picom animations.
 ![Alt text](./images/picom-preview.gif)
+- The preview above does not represent the latest picom config. I'm just too lazy to record another preview. Don't worry, it's a lot better that the preview.
 
 ## Installation:
 
 **Just clone the repo, and then copy the config files into the correspond app config directory.**
-**INSTALL SCRIPT COMING SOON!**
+
+**Don't forget to add these to your bspwmrc file:
+
+```bash
+eww open cpuwin
+eww open ramwin
+eww open diskwin
+eww open tempwin
+eww open updateswin
+eww open powerwindow
+eww open volume-slider-window
+eww open volume-button-window
+eww open wifi-button-window
+eww open music-button-window
+```
+These are for the eww widgets.
+
+
+**INSTALL SCRIPT COMING SOON! (imbeingfr)**
 
 # NOTE 
 **The picom config sometimes breaks if you change the rice. Don't worry. I'm looking forward to fixing it!**
