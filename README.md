@@ -1,4 +1,5 @@
 # My bspwm, kitty, starship, and gtk theme config files.
+![Alt text](./images/Dotfiles.png)
 
 ## Preview:
 ![Alt text](./images/eww-setup.png)
