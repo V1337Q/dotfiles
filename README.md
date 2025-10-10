@@ -1,5 +1,20 @@
 # My bspwm, kitty, starship, and gtk theme config files.
 ![Alt text](./images/Dotfiles.png)
+<p align="center">
+  <a href="https://github.com/V1337Q/dotfiles/stargazers">
+    <img
+      alt="Stargazers"
+      src="https://img.shields.io/github/stars/V1337Q/dotfiles?style=for-the-badge&logo=starship&color=78dba9&logoColor=b6beca&labelColor=1a1e24"
+    >
+  </a>
+  <a href="https://github.com/V1337Q/dotfiles/issues">
+    <img
+      alt="Issues"
+      src="https://img.shields.io/github/issues/V1337Q/dotfiles?style=for-the-badge&logo=gitbook&color=70a5eb&logoColor=b6beca&labelColor=1a1e24"
+    >
+  </a>
+</p>
+
 
 ## Preview:
 ![Alt text](./images/eww-setup.png)
