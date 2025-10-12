@@ -4,13 +4,13 @@
   <a href="https://github.com/V1337Q/dotfiles/stargazers">
     <img
       alt="Stargazers"
-      src="https://img.shields.io/github/stars/V1337Q/dotfiles?style=for-the-badge&logo=starship&color=78dba9&logoColor=b6beca&labelColor=1a1e24"
+      src="https://img.shields.io/github/stars/V1337Q/dotfiles?style=for-the-badge&logo=starship&color=78DBA9&logoColor=b6beca&labelColor=171B20"
     >
   </a>
   <a href="https://github.com/V1337Q/dotfiles/issues">
     <img
       alt="Issues"
-      src="https://img.shields.io/github/issues/V1337Q/dotfiles?style=for-the-badge&logo=gitbook&color=70a5eb&logoColor=b6beca&labelColor=1a1e24"
+      src="https://img.shields.io/github/issues/V1337Q/dotfiles?style=for-the-badge&logo=gitbook&color=86aaec&logoColor=b6beca&labelColor=171B20"
     >
   </a>
 </p>
