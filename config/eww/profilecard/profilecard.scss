@@ -74,8 +74,11 @@
   background-color: $bg;
   padding: 0rem 0rem;
   border-radius: 0%;
-  margin-left:  30px;
-  color: $green;
+  // margin-left:  -90px;
+  // margin-right:  90px;
+  margin-left:  -35px;
+  margin-right:  135px;
+  color: $blue;
 
   .pacman-icon {
     font-family: Material Design Icons Desktop;
@@ -234,6 +237,34 @@
   color: $fg;
 }
 
+// .progress {
+//   background-color: $bg;
+//   padding: 0rem 0rem;
+//   border-radius: 2rem;
+
+//   circular-progress {
+//     background-color: $mc;
+
+//     &.ram {
+//       color: $magenta;
+//     }
+
+//     &.cpu {
+//       color: $green;
+//     }
+
+//     &.disk {
+//       color: $yellow;
+//     }
+//   }
+
+//   .icon {
+//     font-family: "Font Awesome 6 Free Solid";
+//     font-size: 0.7rem;
+//     padding: 0.6rem;
+//   }
+// }
+
 .progress {
   background-color: $bg;
   padding: 0rem 0rem;
@@ -241,17 +272,33 @@
 
   circular-progress {
     background-color: $mc;
+    transition: all 0.2s ease-in-out;
 
     &.ram {
       color: $magenta;
+      
+      &:hover {
+        color: $mc;
+        background-color: $magenta;
+      }
     }
 
     &.cpu {
       color: $green;
+      
+      &:hover {
+        color: $mc;
+        background-color: $green;
+      }
     }
 
     &.disk {
-      color: $blue;
+      color: $yellow;
+      
+      &:hover {
+        color: $mc;
+        background-color: $yellow;
+      }
     }
   }
 
@@ -264,26 +311,27 @@
 
 .temp {
   // font-family: "Font Awesome 6 Free Solid";
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font Propo";
   font-size: 1rem;
-  color: $magenta;
-}
-
-// .powermenu {
-// }
-.power-icon {
-  font-size: 20px;
   color: $red;
-  background-color: $mc;
-  padding: 0rem 0rem;
-  border-radius: 200%;
 }
 
-.power-icon:hover {
-  background-color: $red;
-  font-size: 20px;
-  padding: 0rem 0rem;
-  color: $mc;
+.powermenu {
+  .power-icon {
+    background-color: $mc;
+    font-size: 17px;
+    font-family: "JetBrainsMono Nerd Font Propo";
+    padding: 0rem 0rem;
+    border-radius: 200%;
+    color: $red;
+  }
+}
+
+.powermenu:hover {
+  .power-icon {
+    background-color: $red;
+    color: $bg;
+  }
 }
 
 .power-popup {
@@ -303,16 +351,18 @@
 }
 
 .power-btn {
-  background-color: $yellow;
+  background-color: $bg;
   font-size:  25;
+  font-family: "JetBrainsMono Nerd Font Propo";
   padding: 0.5rem 1rem;
-  border-radius: 200rem 200rem;
-  color: $mc;
+  border-radius: 100rem 100rem;
+  color: $red;
 }
 .power-btn:hover {
   background-color: $red;
   color: $mc;
 }
+
 
 // .powermenu .power-icon:hover {
 //   background-color: #f38ba8;
@@ -332,11 +382,13 @@
   font-size: 15px;
   padding: 0px;
   border-radius: 30%;
-  color: $blue;
+  color: $black;
 }
 .volume-button:hover {
-  background-color: #f38ba8;
-  color: #1e1e2e;
+  // background-color: #f38ba8;
+  // color: #1e1e2e;
+  background-color: $mc;
+  color: #f38ba8;
 }
 
 .volume-slider {
@@ -368,11 +420,16 @@
 
 .netnet {
   background-color: $mc;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font Propo";
   font-size: 17px;
   padding: 0rem 0rem;
   border-radius: 200%;
-  color: $green;
+  color: $yellow;
+}
+
+.netnet:hover {
+  background-color: $green;
+  color: $bg;
 }
 
 // .updateswin {
@@ -386,9 +443,26 @@
 
 .music-button {
   background-color: $mc;
-  font-family: "JetBrainsMono Nerd Font";
-  font-size: 20px;
-  padding: 0rem 0rem;
-  border-radius: 20%;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 17px;
+  padding: 0px;
+  border-radius: 200rem 200rem;
   color: $green;
+}
+.music-button:hover {
+  background-color: $red;
+  color: $mc;
+}
+
+.tele {
+  background-color: $blue;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 17px;
+  padding: 0px;
+  border-radius: 10px;
+  color: $bg;
+}
+.tele:hover {
+  background-color: $red;
+  color: $mc;
 }

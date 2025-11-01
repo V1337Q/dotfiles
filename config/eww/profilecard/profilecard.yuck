@@ -4,6 +4,14 @@
 (defpoll os :interval "24h" "../eww/profilecard/scripts/fetch os")
 (defpoll wm :interval "24h" "../eww/profilecard/scripts/fetch wm")
 
+; ;; Workspaces
+
+; (deflisten workspaces_monitor0 :initial "[]"
+;   "scripts/listen_workspaces.sh 0")
+
+; (deflisten workspaces_monitor1 :initial "[]"
+;   "scripts/listen_workspaces.sh 1")
+
 ;; Profile
 (defvar IMAGEP "../src/assets/profile.png")
 (defpoll username :interval "24h" "whoami")
@@ -128,6 +136,7 @@
 						 (button :class "pacman-updates"
 								 :halign "start"
 								 :tooltip "Click to update"
+								 ; :onclick "OpenApps --update" "${UPDATES} Updates"))))
 								 :onclick "OpenApps --update" "${UPDATES} Updates"))))
 			   (box :orientation "h"
 					:space-evenly "false"
@@ -187,7 +196,8 @@
     (circular-progress
       :class css
       :value data
-      :thickness 6
+      ; :thickness 6
+      :thickness 3
       :tooltip tip
       (overlay
         :valign "center"
@@ -281,6 +291,7 @@
 
     (box :orientation "h"
       (label :class "temp" :text "")
+      ; (label :class "temp" :text "")
       (label :class "info-btn" :text temp))
   )
 )
@@ -293,26 +304,26 @@
     (launchermenu))
 
 (defwindow cpuwin
-  :geometry (geometry :x "1265px" :y "1031px" :width "33px" :height "33px")
+  :geometry (geometry :x "1225px" :y "1031px" :width "33px" :height "33px")
   :wm-ignore false
   (cpu)
 )
 
 (defwindow ramwin
-  :geometry (geometry :x "1345px" :y "1030px" :width "30px" :height "35px")
+  :geometry (geometry :x "1305px" :y "1030px" :width "30px" :height "35px")
   :wm-ignore false
   (ram)
 )
 
 (defwindow diskwin
-  :geometry (geometry :x "1305px" :y "1030px" :width "30px" :height "35px")
+  :geometry (geometry :x "1265px" :y "1030px" :width "30px" :height "35px")
   :wm-ignore false
 		:stacking "bg"
   (disk)
 )
 
 (defwindow tempwin
-  :geometry (geometry :x "1210px" :y "1030px" :width "150px" :height "40px")
+  :geometry (geometry :x "1170px" :y "1030px" :width "40px" :height "40px")
   :wm-ignore false
   (footer)
 )
@@ -323,12 +334,14 @@
     (eventbox :cursor "pointer"
       (button :class "pacman-updates"
               :tooltip "Click to update"
-              :onclick "OpenApps --update" "${UPDATES} Updates"))
+              ; :onclick "OpenApps --update" "${UPDATES} Updates"))
+              :onclick "OpenApps --update" " ${UPDATES} "))
   )
 )
 
 (defwindow updateswin
-  :geometry (geometry :x "1015px" :y "1030px" :width "180px" :height "40px")
+  ; :geometry (geometry :x "1115px" :y "1030px" :width "180px" :height "39px")
+  :geometry (geometry :x "1120px" :y "1030px" :width "20px" :height "39px")
   :wm-ignore false
   (updates)
 )
@@ -347,20 +360,20 @@
 
 (defwidget powermenu []
   (eventbox :class "powermenu"
-   :onclick "eww open --toggle powerpopup"
+;   :onclick "eww open --toggle powerpopup"
+   :onclick "OpenApps --powermenu"
    (label :class "power-icon"
-          :text "󰐥"
-          :halign "center"
-          :valign "center"
+          :tooltip "Power Menu"
+          :text "⏻"
           :width 34
-          :height 32)))
+          :height 34)))
 
 (defwindow powerwindow
   :geometry (geometry
-    :x -547
+    :x -550
     :y 508
-    :width 200
-    :height 200
+    :width 30
+    :height 30
     :anchor "center center")
   :stacking "fg"
   :exclusive false
@@ -392,16 +405,12 @@
        (eventbox :onclick "systemctl poweroff"
          (label :text "󰐥" :class "power-btn"))
        (eventbox :onclick "systemctl reboot"
-         (label :text "󰜉" :class "power-btn"))
+         (label :text "" :class "power-btn"))
        (eventbox :onclick "systemctl suspend"
          (label :text "" :class "power-btn"))
        (eventbox :onclick "pkill -KILL -u $USER"
          (label :text "" :class "power-btn"))))
 
-(defwidget volume-button []
-  (button :class "volume-button" 
-          :onclick "pamixer -t"
-          ""))
 
 (defwidget volume-slider []
   (scale :class "volume-slider"
@@ -410,12 +419,19 @@
          :value {volume}
          :onchange "pamixer --set-volume {}"))
 
+(defwidget volume-button []
+  (button :class "volume-button" 
+          ; :onclick "pamixer -t"
+          :onclick "OpenApps --player"
+          :tooltip "Click to mute"
+          ""))
+
 (defpoll volume :interval "1s" "pamixer --get-volume")
 
 
 (defwindow volume-slider-window
   :geometry (geometry
-    :x 485
+    :x 445
     :y 508
     :width 80
     :height 33
@@ -427,7 +443,7 @@
 
 (defwindow volume-button-window
   :geometry (geometry
-    :x 442
+    :x 402
     :y 508
     :width 33
     :height 33
@@ -439,6 +455,7 @@
 
 (defwidget netnet []
   (button :class "netnet" 
+          :tooltip "Network Manager"
           :onclick "OpenApps --netmanager"
           "󰤨"))
 
@@ -456,13 +473,21 @@
 
 (defwidget music-button []
   (button :class "music-button" 
-          :onclick "OpenApps --player"
-          "󰓇"))
+          ; :onclick "OpenApps --player"
+          :onclick "OpenApps --riceeditor"
+          ; "󰓇"))
+          ; "󰝚"))
+          "󱥚"))
+
 
 (defwindow music-button-window
   :geometry (geometry
-    :x 140
+    ; :x 125
+    :x 509
     :y 508
+    ; :width 40
+    ; :height 33
+
     :width 33
     :height 33
     :anchor "center center")
@@ -470,3 +495,28 @@
   :exclusive false
   :focusable false
   (music-button))
+
+(defwidget tele []
+  (button :class "tele" 
+          ; :onclick "OpenApps --player"
+          :onclick "OpenApps --telegram"
+          ; "󰓇"))
+          ; "󰝚"))
+          ""))
+
+
+(defwindow telewin
+  :geometry (geometry
+    ; :x 125
+    :x -510
+    :y 508
+    ; :width 40
+    ; :height 33
+
+    :width 33
+    :height 33
+    :anchor "center center")
+  :stacking "fg"
+  :exclusive false
+  :focusable false
+  (tele))
