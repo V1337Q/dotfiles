@@ -1,5 +1,5 @@
 " Start of Config
-source ~/.vim/keymaps.vim
+" source ~/.vim/keymaps.vim
 source ~/.vim/startify.vim
 source ~/.vim/vimtex.vim 
 set number
@@ -11,8 +11,11 @@ set clipboard=unnamedplus
 set tabstop=1
 " set shiftwidth=2
 set expandtab
-let mapleader = " "
-nnoremap <Leader>h :below terminal<CR>
+" let mapleader = "."
+" let mapleader = "\<M-key>"
+" let mapleader = "\<C-M-key>"
+let mapleader = ","
+" nnoremap <Leader>h :below terminal<CR>
 " set fillchars+=vert:\
 " set fillchars+=horiz:\
 " set fillchars+=vert:\ ,horiz:\
@@ -43,6 +46,7 @@ vnoremap J gj
 vnoremap K gk
 nnoremap Q :q<CR>
 nnoremap <Leader>a :ALEDetail<CR>
+nnoremap D d90j
 " = Fast Scrolling =  
 " Easy shits
 " inoremap ( ()<Left>
@@ -172,6 +176,7 @@ Plug 'V1337Q/buffereze'
 Plug 'vimsence/vimsence'
 Plug 'bfrg/vim-c-cpp-modern'
 Plug 'dense-analysis/ale'
+Plug 'V1337Q/termp.vim'
 " Plug 'vlime/vlime'
 " Plug 'kovisoft/vim-lisp'
 call plug#end()
@@ -248,7 +253,7 @@ endfunction
   " \ ' %3p%%',
   " \ ' %{airline#extensions#coc#get_status()}',
 let g:airline_section_z = airline#section#create([
-  \ ' %l|%L | %c|%{MaxColumn()}',
+  \ ' %l|%L │ %c|%{MaxColumn()}',
   \ ' %{get(g:, "coc_git_status", "")}',
 \ ])
 
@@ -300,11 +305,14 @@ elseif &filetype == 'matlab'
 endif
 endfunc
 
-
 " Safer mappings
 nnoremap yy "+yy      " yank line to clipboard
 vnoremap y  "+y       " yank selection to clipboard
 "nnoremap Y  "+y$      " yank to end of line
-set tabstop=1
 autocmd BufRead,BufNewFile *.lisp,*.lsp set filetype=lisp
 autocmd BufRead,BufNewFile *.yuck set filetype=lisp
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
