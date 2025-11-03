@@ -39,7 +39,7 @@ prefix + I
 ```
 **To install the plugins**
 
-**Don't forget to add these to your bspwmrc file:
+**Don't forget to add these to your bspwmrc file:**
 
 ```bash
 eww open cpuwin
