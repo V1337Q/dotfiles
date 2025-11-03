@@ -31,6 +31,14 @@
 
 **Just clone the repo, and then copy the config files into the correspond app config directory.**
 
+### For the tmux config
+**Don't forget to do**
+```bash
+prefix + I
+
+```
+**To install the plugins**
+
 **Don't forget to add these to your bspwmrc file:
 
 ```bash
