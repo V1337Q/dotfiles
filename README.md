@@ -56,6 +56,7 @@ eww open music-button-window
 These are for the eww widgets.
 
 
+**A little change so that I could push my new nvim config (it wont let me)**
 **INSTALL SCRIPT COMING SOON! (imbeingfr)**
 
 # NOTE 
