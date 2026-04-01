@@ -378,17 +378,17 @@
 // }
 
 .volume-button {
-  background-color: $mc;
+  background-color: $black;
   font-size: 15px;
   padding: 0px;
   border-radius: 30%;
-  color: $black;
+  color: $fg;
 }
 .volume-button:hover {
   // background-color: #f38ba8;
   // color: #1e1e2e;
   background-color: $mc;
-  color: #f38ba8;
+  color: $red;
 }
 
 .volume-slider {
@@ -466,3 +466,17 @@
   background-color: $red;
   color: $mc;
 }
+
+.rocket {
+  background-color: $black;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 17px;
+  padding: 0px;
+  border-radius: 10px;
+  color: $fg;
+}
+.rocket:hover {
+  background-color: $green;
+  color: $bg;
+}
+

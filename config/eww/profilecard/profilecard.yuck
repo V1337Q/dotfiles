@@ -504,6 +504,14 @@
           ; "󰝚"))
           ""))
 
+(defwidget rocket []
+  (button :class "rocket" 
+          ; :onclick "OpenApps --player"
+          :onclick "OpenApps --menu"
+          ; "󰓇"))
+          ; "󰝚"))
+          ""))
+
 
 (defwindow telewin
   :geometry (geometry
@@ -520,3 +528,21 @@
   :exclusive false
   :focusable false
   (tele))
+
+
+(defwindow rocketwin
+  :geometry (geometry
+    ; :x 125
+    :x -510
+    :y 508
+    ; :width 40
+    ; :height 33
+
+    :width 33
+    :height 33
+    :anchor "center center")
+  :stacking "fg"
+  :exclusive false
+  :focusable false
+  (rocket))
+

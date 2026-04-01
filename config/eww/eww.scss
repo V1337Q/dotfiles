@@ -10,20 +10,38 @@ tooltip {
   font-size: 1rem;
 }
 
-$bg: #171B20;
-$bg-alt: #78DBA9;
-$mc: #21262e;
-$mc3: #485263;
-$mc2: #242931;
-$fg: #b6beca;
-$black: #485263;
-$red: #e26c7c;
-$cyan: #70A5EB;
-$green: #78DBA9;
-$yellow: #f1cf8a;
-$blue: #86aaec;
-$magenta: #c68aee;
-$cyan: #e26c7c;
-$archicon: #86aaec;
+// Decay
+// $bg: #171B20;
+// $bg-alt: #78DBA9;
+// $mc: #21262e;
+// $mc3: #485263;
+// $mc2: #242931;
+// $fg: #b6beca;
+// $black: #485263;
+// $red: #e26c7c;
+// $cyan: #70A5EB;
+// $green: #78DBA9;
+// $yellow: #f1cf8a;
+// $blue: #86aaec;
+// $magenta: #c68aee;
+// $cyan: #e26c7c;
+// $archicon: #86aaec;
+
+// Everforest
+$bg: #2b3339;
+$bg-alt: #83c092;
+$mc: #323c41;
+$mc3: #4a5258;
+$mc2: #424a50;
+$fg: #d3c6aa;
+$black: #4a5258;
+$red: #e67e80;
+$cyan: #7fbbb3;
+$green: #a7c080;
+$yellow: #dbbc7f;
+$blue: #7fbbb3;
+$magenta: #d699b6;
+$cyan: #e67e80;
+$archicon: #7fbbb3;
 
 @import "profilecard/profilecard.scss";
