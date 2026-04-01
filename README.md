@@ -52,6 +52,7 @@ eww open volume-slider-window
 eww open volume-button-window
 eww open wifi-button-window
 eww open music-button-window
+eww open rocketwin
 ```
 These are for the eww widgets.
 
